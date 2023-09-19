@@ -1,0 +1,211 @@
+@import url(/assets/fonts/fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+     height: 100%; 
+}
+
+body {
+    background-image: url(/assets/img/3.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding:  40px 20px;
+    border: 5px solid #1CC5DC;
+    border-radius: 50px;
+    background-color: rgba(219, 218, 218, 0.8);
+    box-shadow: 0 5px 0 #3C93D5;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'bodoniflfbold';
+}
+
+.par {
+    text-align: center;
+    font-family: 'bodoniflfregular';
+}
+
+.par_top {
+    font-size: 30px;
+    padding: 40px 20px 0 20px;
+}
+
+.par_bottom {
+    font-size: 24px;
+    padding: 0 20px 20px;
+    color: #ff00aa;
+}
+
+.typing_letters {
+    font-size: 34px;
+    padding: 0 20px 20px;
+    text-align: center;
+    font-family: 'bodoniflfmedium_italic';
+}
+
+.input {
+    display: flex;
+}
+
+#search {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #1CC5DC;
+    border-radius: 0%;
+    font-family: 'bodoniflfregular';
+    outline: #1CC5DC;
+    caret-color: #1CC5DC;
+}
+
+#submit {
+    padding: 10px 12px;
+    background-color: #1CC5DC;
+    color: #000;
+    border: 1px solid #1CC5DC;
+    font-size: 20px;
+    font-family: 'bodoniflfbold';
+    cursor: pointer;
+}
+
+.guesses_left {
+    font-size: 24px;
+    padding: 30px 20px 5px;
+}
+
+.guesses_previous {
+    font-size: 24px;
+    padding: 0 20px 20px;
+}
+
+.previous {
+    font-family: 'bodoniflfmedium_italic';
+    font-size: 30px;
+    color: #ff00aa; 
+}
+
+#guess_remain {
+    font-family: 'bodoniflfmedium_italic';
+    color: #1CC5DC;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newGame {
+    padding: 15px 40px;
+    font-size: 40px;
+    font-family: 'bodoniflfbold';
+    border-radius: 30px;
+    background-color: #c1ee49;
+    border: 1px solid #1CC5DC;
+    box-shadow: 0 5px 0 #46972d;
+    cursor: pointer;
+}
+
+.newGame:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+@media all and (max-width: 1200px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 760px) {
+    .container {
+        width: 80%;
+        padding-bottom: 20px;
+    }
+
+    .par_top {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .par_bottom {
+        font-size: 20px;
+        padding: 0 20px 20px;
+    }
+
+    .typing_letters {
+        font-size: 30px;
+        padding: 0 20px 10px;
+    }
+
+    .guesses_left {
+        font-size: 20px;
+        padding: 30px 20px 5px;
+    }
+
+    .guesses_previous {
+        font-size: 20px;
+    }
+
+    .previous {
+        font-size: 24px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .par_top {
+        font-size: 20px;
+        padding: 20px 10px 0;
+    }
+
+    .par_bottom {
+        font-size: 16px;
+        padding: 0 10px 20px;
+    }
+
+    .typing_letters {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    #search {
+        width: 150px;
+    }
+
+    .newGame {
+        padding: 10px 20px;
+        font-size: 25px;
+    }
+}
+

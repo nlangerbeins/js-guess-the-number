@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Guess the Number!</h1>
+            <p class="par par_top">I am thinking of a number between 1 and 30.</p>
+            <p class="par par_bottom">You have only 5 attemps for it.</p>
+            <p id="text" class="typing_letters"></p>
+            <div class="input">
+                <input id="search" type="text" placeholder="your number...">
+                <button id="submit">check</button>
+            </div>
+            <p class="par guesses_left">You have <span id="guess_remain">5</span> guesses left</p>
+            <p class="par guesses_previous">Previous guesses: <span class="previous" id="guess_previous"></span></p>
+            <div class="buttonContainer"></div>
+        </div>
+        
+    </div>
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
